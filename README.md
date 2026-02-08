@@ -20,10 +20,21 @@ This folder contains skills and context for analyzing database performance issue
 - PostgreSQL
 - MySQL
 
-## SQL Server Runtime Analysis
 
-This workspace includes support for troubleshooting database engine and product specyfic aspects.
+### This workspace includes support for troubleshooting database engine and product specyfic aspects.
+
+## SQL Server Analysis
 
 Available SQL Server skills:
 - Analyze SQL Server Execution Plan
 - Analyze sp_WhoIsActive Output
+
+## Postgres Analysis
+
+Available Postgres skills:
+- TODO
+
+## MySQL/MariaDB Analysis
+
+Available Mysql/MariaDB skills:
+- TODO
