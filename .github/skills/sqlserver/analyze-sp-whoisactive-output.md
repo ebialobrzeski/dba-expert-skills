@@ -1,3 +1,8 @@
+---
+name: analyze-sp-whoisactive-output
+description: Analyzes sp_WhoIsActive output to identify blocking chains, resource-intensive sessions, wait patterns, and active SQL Server performance issues. Use when user provides sp_WhoIsActive results or reports blocking, high CPU, or concurrency problems.
+---
+
 # Skill: Analyze sp_WhoIsActive Output
 
 ## When to use

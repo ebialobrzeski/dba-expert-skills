@@ -1,3 +1,8 @@
+---
+name: analyze-postgresql-execution-plan
+description: Analyzes PostgreSQL EXPLAIN output to identify sequential scans, join strategy issues, bitmap index usage, planner row estimate inaccuracies, and statistics problems. Use when user provides EXPLAIN or EXPLAIN ANALYZE output for PostgreSQL.
+---
+
 # Skill: Analyze PostgreSQL Execution Plan
 
 This skill extends the shared execution plan analysis skill with PostgreSQL-specific behavior.
