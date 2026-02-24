@@ -17,6 +17,7 @@ This utility generates a SQL Server script that executes a user-provided query a
 **Required Inputs:**
 1. **Query**: The T-SQL query to execute in each database
 2. **Column Definitions**: Table structure matching the query output (must include ServerName, DatabaseName)
+   - Reference `.github\assets\entities\DatabaseSchema.sql` for accurate data types from the sample database schema
 3. **Database Filter**: Comma-separated list of database names or 'ALL'
 
 **Template:**
@@ -155,3 +156,4 @@ DROP TABLE ##TempReport
 - Error handling continues processing remaining databases on failure
 - Temp table must be dropped manually if script is interrupted
 - Always include @@SERVERNAME AS ServerName and DB_NAME() AS DatabaseName in the query output
+- Reference `.github\assets\entities\DatabaseSchema.sql` to match temp table column data types with actual database schema
