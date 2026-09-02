@@ -68,6 +68,7 @@ dba-expert-skills/
 │   │   ├── active-queries.sql
 │   │   ├── blocking-chains.sql
 │   │   ├── index-missing.sql
+│   │   ├── index-usage-stats.sql
 │   │   └── wait-stats.sql
 │   ├── postgres/
 │   │   ├── expensive-queries.sql
@@ -83,6 +84,10 @@ dba-expert-skills/
 │       └── index-unused.sql
 ├── templates/
 │   └── execution-plan-analysis.md # Template for analysis requests
+├── assets/                        # Product schemas kept for reuse
+│   └── insightia/schemas/
+├── workspace/                     # Drop zone for your inputs, one folder per product
+│   └── insightia/
 ├── README.md                      # This file
 └── skills-summary.md              # Skills architecture documentation
 ```

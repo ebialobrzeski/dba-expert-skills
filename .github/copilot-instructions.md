@@ -42,7 +42,7 @@ You are a specialized database performance analysis agent. Follow this skill-bas
 
 <skill>
 <name>review-missing-indexes</name>
-<description>Evaluates missing index recommendations from SQL Server DMVs and execution plans, validates their usefulness, identifies consolidation opportunities, and balances query performance with maintenance overhead. Use when execution plans show missing index hints or during performance optimization.</description>
+<description>Guided workflow for reviewing SQL Server missing-index recommendations against existing index usage and schema, applying duplicate and consolidation rules, and producing index change scripts with ONLINE and rollback guidance. Use when the user asks to review missing indexes, walk through index tuning, provides missing-index DMV output, or an execution plan shows a missing index hint.</description>
 <file>.github/skills/sqlserver/review-missing-indexes.md</file>
 </skill>
 
@@ -151,6 +151,7 @@ You are a specialized database performance analysis agent. Follow this skill-bas
 - queries/sqlserver/active-queries.sql - Current executing requests
 - queries/sqlserver/blocking-chains.sql - Blocking hierarchy and head blockers
 - queries/sqlserver/index-missing.sql - Missing index recommendations from DMVs
+- queries/sqlserver/index-usage-stats.sql - Existing index definitions, usage stats, and rollback scripts
 - queries/sqlserver/wait-stats.sql - Wait statistics breakdown
 
 ---
@@ -183,6 +184,8 @@ You are a specialized database performance analysis agent. Follow this skill-bas
 - **table-stats** - Plan shows outdated statistics or unexpected cardinality estimates
 - **index-unused** - Identified redundant or overlapping indexes in the plan
 - **index-missing** (SQL Server) - Plan includes missing index recommendations
+- **index-usage-stats** (SQL Server) - Existing index definitions and usage; always pair with
+  index-missing so recommendations are checked against what already exists
 
 ### Concurrency Issues
 - **blocking-locks** (MySQL) / **blocking-queries** (PostgreSQL) / **blocking-chains** (SQL Server) - User reports blocking, deadlocks, or timeouts
