@@ -11,7 +11,7 @@ SET NOCOUNT ON;
 
 -- Filters (exact names or LIKE patterns, e.g. N'%Sales%'). NULL = no filter.
 DECLARE
-    @TargetSchema SYSNAME = N'dbo',
+    @TargetSchema SYSNAME = NULL,
     @TargetTable  SYSNAME = NULL;
 
 DECLARE @DmvDataSince DATETIME = (SELECT sqlserver_start_time FROM sys.dm_os_sys_info);
